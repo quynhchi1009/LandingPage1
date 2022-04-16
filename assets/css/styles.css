@@ -20,6 +20,7 @@ html{
     top: 0;
     height: 46px;
     background-color: black;
+    z-index: 1;
 }
 
 #nav {
@@ -97,7 +98,28 @@ html{
 }
 
 #slider {
+    position: relative;
     margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/slider/slider1.jpeg') top center / cover no-repeat;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#slider .text-description{
+    font-size: 15px;
+    margin-top: 25px;
 }
 
 #content {
