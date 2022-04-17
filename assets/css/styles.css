@@ -16,6 +16,68 @@ html{
 .text-white{
     color: #fff !important;
 }
+
+.text-center{
+    text-align: center !important;
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third{
+    width: 33.3333%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full{
+    width: 100%;
+}
+
+.mt-8{
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.pull-right{
+    float:right !important;
+}
+
+.btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
 #main {
 
 }
@@ -135,7 +197,7 @@ html{
 
 #content .content-section{
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -168,12 +230,6 @@ html{
 
 #content .members-list{
     margin-top: 48px;
-}
-
-#content .member-item{
-    float: left;
-    width: 33.3333%;
-    text-align: center;
 }
 
 #content .member-img{
@@ -221,14 +277,7 @@ html{
 
 /* Places */
 .places-list{
-    margin: 32px -8px 0;
-    padding-bottom: 48px;
-}
-
-.place-item{
-    float: left;
-    width: 33.3333%;
-    padding: 0 8px;
+    margin-top: 32px;
 }
 
 .place-img{
@@ -260,24 +309,67 @@ html{
     line-height: 1.6;
 }
 
-.place-buy-btn{
-    color: #fff;
-    background-color: #000;
-    text-decoration: none;
-    padding: 11px 16px;
+
+/* Contact Form */
+
+.contact-content{
+    margin-top: 48px;
+}
+
+.contact-info{
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-info i[class*="ti-"]{
+    width: 30px;
     display: inline-block;
-    margin-top: 15px;
 }
 
-.place-buy-btn:hover{
-    color: #000;
-    background-color: #ccc;
+.contact-form{
+    font-size: 15px;
 }
 
+.form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+/* Map Section */
+.map-section img{
+    width: 100%;
+}
+/* Footer */
 #footer{
-
+    padding: 64px 16px;
+    text-align: center;
 }
 
+#footer .socials-list{
+    font-size: 24px;
+}
+
+#footer .socials-list a{
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+#footer .copyright a,
+#footer .socials-list a:hover{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copyright{
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* Modal */
 .modal {
     position: fixed;
     top:0;
@@ -372,6 +464,8 @@ html{
 .modal-footer a{
     color: #2196f3;
 }
+
+
 
 @keyframes modalFadeIn {
     from {
