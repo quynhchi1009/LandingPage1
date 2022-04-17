@@ -108,7 +108,7 @@
                                     ngày hứng lên hay ngày nào đó cảm thấy bí bách cần một không gian thoáng đãng để thở. Cây cầu cũng là
                                     nơi các bạn sinh
                                     viên vẫn hay tụ tập ngồi lại đàn hát vui vẻ, là nơi lưu giữ những kỉ niệm tuổi trẻ của chúng ta.</p>
-                                <a href="#" class="place-buy-btn">Visit</a>
+                                <button class="place-buy-btn js-buy-ticket">Visit</button>
                             </div>
                         </div>
                         <div class="place-item">
@@ -124,7 +124,7 @@
                                     không gian rộng lớn. Nơi đây sẽ cho bạn một góc nhìn khác về cầu Long Biên, đó là góc nhìn từ trên cao
                                     thay vì nhìn
                                     thẳng hay nhìn “hất” từ phía dưới bãi đá sông Hồng lên.</p>
-                                <a href="#" class="place-buy-btn">Visit</a>
+                                <button class="place-buy-btn js-buy-ticket">Visit</button>
                             </div>
                         </div>
                         <div class="place-item">
@@ -135,7 +135,7 @@
                                 <p class="place-desc">Mùa đông đến thì cầu Long Biên thực sự sẽ thành nơi lý tưởng nhất để ngồi lại ăn ngô
                                     khoai nướng, hưởng không khí lành
                                     lạnh gió rít bên tai và đưa tay tìm hơi ấm từ bếp lửa, hơi khoai nóng bốc lên ấm lòng vô cùng.</p>
-                                <a href="#" class="place-buy-btn">Visit</a>
+                                <button class="place-buy-btn js-buy-ticket">Visit</button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -154,5 +154,69 @@
     
         <div id="footer"></div>
     </div>
+
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="ti-close"></i>
+            </div>
+
+            <header class="modal-header">
+                <i class="ti-bag modal-heading-icon"></i>
+                Tickets
+            </header>
+            
+            <div class="modal-body">
+                <label for="ticket-quantity" class="modal-label">
+                    <i class="ti-shopping-cart"></i>
+                    Ticket, 15$ per person
+                </label>
+                <input id ="ticket-quantity" type="text" class="modal-input" placeholder="How many?">
+
+                <label for="ticket-email" class="modal-label">
+                    <i class="ti-user"></i>
+                    Send to
+                </label>
+                <input id="ticket-email" type="text" class="modal-input" placeholder="Enter Email...">
+                
+                <button id="buy-tickets">
+                    Pay
+                    <i class="ti-check"></i>
+                </button>
+            </div>
+
+            <footer class="modal-footer">
+                <p class="modal-help">Need <a href="#">help?</a></p>
+            </footer>
+        </div>
+    </div>
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-ticket')
+        const modal = document.querySelector('.js-modal')
+        const modalContainer = document.querySelector('.js-modal-container')
+        const modalClose = document.querySelector('.js-modal-close')
+
+        /* Ham Hien thi modal mua ve (them class open vao modal)*/
+        function showBuyTicket(){
+            modal.classList.add('open')
+        }
+            
+        /* Ham an modal mua ve (go bo class open cua modal)*/
+        function hideBuyTicket() {
+                modal.classList.remove('open')
+            }
+
+        //lap qua tung the button va nghe hanh vi click
+        for (const buyBtn of buyBtns) {
+            buyBtn.addEventListener('click', showBuyTicket)
+        }
+
+        //nghe hanh vi click vao button close
+        modalClose.addEventListener('click', hideBuyTicket)
+        modal.addEventListener('click', hideBuyTicket)
+        modalContainer.addEventListener('click', function(event){
+            event.stopPropagation()
+        })
+    </script>
 </body>
 </html>
