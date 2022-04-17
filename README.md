@@ -1,4 +1,4 @@
-# W3.CSS Template The BAND : https://www.w3schools.com/w3css/tryw3css_templates_band.htm
+W3.CSS Template The BAND : https://www.w3schools.com/w3css/tryw3css_templates_band.htm
 
 ONE PAGE
 
@@ -13,6 +13,5 @@ ONE PAGE
     Tour
     Contact
     Image
-    Footer
  + Footer
 
