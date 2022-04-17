@@ -9,6 +9,13 @@ html{
     font-family: Helvetica, Arial, sans-serif;
 }
 
+.clear{
+    clear: both;
+}
+
+.text-white{
+    color: #fff !important;
+}
 #main {
 
 }
@@ -124,6 +131,147 @@ html{
 
 #content {
 
+}
+
+#content .content-section{
+    width: 800px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+#content .section-subheading{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text{
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.6;
+}
+#content .member-name {
+    font-size: 15px;
+    
+}
+
+#content .members-list{
+    margin-top: 48px;
+}
+
+#content .member-item{
+    float: left;
+    width: 33.3333%;
+    text-align: center;
+}
+
+#content .member-img{
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
+}
+
+/* Tour section */
+.tour-section{
+    background-color: black;
+}
+
+.tickets-list{
+    background-color: #fff;
+    margin-top: 40px;
+    list-style: none;
+}
+
+.tickets-list li{
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+}
+
+.tickets-list .sold-out {
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.tickets-list .quantity {
+    float: right;
+    width: 65px;
+    height: 24px;
+    background-color: black;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+
+/* Places */
+.places-list{
+    margin: 32px -8px 0;
+    padding-bottom: 48px;
+}
+
+.place-item{
+    float: left;
+    width: 33.3333%;
+    padding: 0 8px;
+}
+
+.place-img{
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover{
+    opacity: 0.6;
+}
+.place-body{
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.place-heading{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.place-time{
+    margin-top: 15px;
+    color: #757575
+}
+
+.place-desc{
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.place-buy-btn{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.place-buy-btn:hover{
+    color: #000;
+    background-color: #ccc;
 }
 
 #footer{
