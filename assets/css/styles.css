@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 html{
     font-family: Helvetica, Arial, sans-serif;
     scroll-behavior: smooth;
@@ -59,6 +60,10 @@ html{
     margin-top: 16px !important;
 }
 
+.mt-32 {
+    margin-top: 32px !important;
+}
+
 .pull-right{
     float:right !important;
 }
@@ -72,6 +77,9 @@ html{
     margin-top: 15px;
     cursor: pointer;
     border: none;
+    text-align: center;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 .btn:hover {
@@ -151,16 +159,34 @@ html{
     font-size: 14px;
 }
 
+#header .mobile-menu-btn{
+    position: absolute;
+    right: 0;
+    top:0;
+    display: none;
+}
+
+#header .mobile-menu-btn,
 #header .search-btn{
     float: right;
     padding: 0 21px;
     cursor: pointer;
 }
 
+
 #header .search-btn:hover {
     background-color: red;
 }
 
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon{
+    color: black;
+}
+
+#header .menu-icon,
 #header .search-icon{
     color: #fff;
     font-size: 20px;
@@ -171,7 +197,7 @@ html{
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url('/assets/img/slider/slider1.jpeg') top center / cover no-repeat;
+    background: url('../img/slider/slider1.jpeg') top center / cover no-repeat;
 }
 
 #slider .text-content {
@@ -190,6 +216,7 @@ html{
 #slider .text-description{
     font-size: 15px;
     margin-top: 25px;
+    text-shadow: 0 0 1px #000;
 }
 
 #content {
@@ -198,9 +225,12 @@ html{
 
 #content .content-section{
     width: 800px;
+    max-width: 100%;
     padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading{
@@ -226,11 +256,10 @@ html{
 }
 #content .member-name {
     font-size: 15px;
-    
 }
 
 #content .members-list{
-    margin-top: 48px;
+    margin-top: 32px;
 }
 
 #content .member-img{
@@ -278,7 +307,7 @@ html{
 
 /* Places */
 .places-list{
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .place-img{
@@ -320,6 +349,15 @@ html{
 .contact-info{
     font-size: 18px;
     line-height: 1.6;
+}
+
+.contact-info a{
+    color: #101aef;
+    opacity: 0.8;
+}
+
+.contact-info a:hover{
+    opacity: 1;
 }
 
 .contact-info i[class*="ti-"]{
